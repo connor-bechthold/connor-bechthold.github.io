@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Tajawal", sans-serif;
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+}
+
+#navbar {
+  background-color: #eaeaea;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0.9;
+}
+#logo {
+  width: 270px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+
+@media (max-width: 1000px) {
+  .nav-links {
+    width: 50%;
+  }
+}
+
+@media (max-width: 653px) {
+  .nav-links {
+    width: 80%;
+  }
+}
+
+@media (max-width: 611px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+@media (max-width: 368px) {
+  #logo {
+    display: none;
+  }
+}
+
+.nav-links > li {
+  list-style: none;
+}
+
+.nav-links > li > a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #081d30;
+  font-weight: bold;
+  transition: 0.1s ease;
+}
+
+.nav-links > li > a:hover {
+  border-bottom: 2px solid #081d30;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://i.pinimg.com/originals/af/57/cf/af57cf2e9b2136202a2d377cacf8b6cd.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#welcome-section > h1 {
+  font-family: "Pacifico", cursive;
+  color: #081d30;
+  margin-bottom: 2%;
+  font-size: 90px;
+}
+
+@media (max-width: 540px) {
+  #welcome-section > h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 384px) {
+  #welcome-section > h1 {
+    font-size: 50px;
+  }
+}
+
+#welcome-section > p {
+  color: #081d30;
+  font-size: 25px;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  background-color: #eaeaea;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+}
+
+#about > h1 {
+  padding-top: 2em;
+  font-size: 60px;
+  color: #081d30;
+}
+
+#logo-about {
+  width: 400px;
+  padding: 0.7em;
+}
+
+#about > p {
+  width: 60%;
+  font-size: 23px;
+  padding-bottom: 6em;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  #about > p {
+    width: 90%;
+  }
+}
+
+#skills {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #081d30;
+}
+
+#skills > h1 {
+  padding-top: 2em;
+  font-size: 60px;
+  color: #eaeaea;
+}
+
+#skills-img {
+  width: 70px;
+  padding: 10%;
+}
+
+#skills-img-responsive {
+  width: 70px;
+  padding: 10%;
+  display: none;
+}
+
+.img-flex {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.description-flex {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-left: 7%;
+  text-align: left;
+  padding-right: 7%;
+}
+
+.flex-container {
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 6em;
+}
+
+@media (max-width: 707px) {
+  #skills-img {
+    width: 70px;
+    padding: 10%;
+    display: none;
+  }
+  #skills-img-responsive {
+    width: 70px;
+    padding: 10%;
+    display: block;
+    margin: 0 auto;
+  }
+  .description-flex {
+    display: initial;
+    text-align: center;
+  }
+
+  #skills > .flex-container > .description-flex > p {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .p-bottom {
+    padding-bottom: 4em;
+  }
+
+  .flex-container {
+    display: initial;
+  }
+}
+
+#skills > .flex-container > .description-flex > p {
+  font-size: 23px;
+  color: #eaeaea;
+}
+
+#projects {
+  width: 100%;
+  text-align: center;
+  background-color: #a0c3af;
+}
+
+#projects > h1 {
+  padding-top: 2em;
+  font-size: 60px;
+  color: #081d30;
+}
+
+#projects > p {
+  font-size: 23px;
+  color: #081d30;
+  padding-top: 1em;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 50px;
+  margin: 0 3%;
+  padding-bottom: 10em;
+  padding-top: 3em;
+  justify-content: center;
+}
+
+@media (max-width: 410px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  }
+}
+
+.project-image {
+  height: 20em;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-tile {
+  background-color: #4d7a60;
+  font-weight: none;
+  border-radius: 5px;
+  transition: 1s ease;
+  margin: 0 auto;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-tile:hover {
+  transform: translateY(-15px);
+  box-shadow: 10px 6px 30px #2c2c2c;
+}
+
+.project-tile h2 {
+  color: #eaeaea;
+  font-size: 35px;
+  font-weight: normal;
+  padding-top: 0.7em;
+  padding-bottom: 0.4em;
+}
+
+.project-tile p {
+  width: 90%;
+  margin: 3% auto;
+  font-size: 23px;
+  color: #eaeaea;
+}
+
+.btn {
+  font-family: "Tajawal", sans-serif;
+  font-size: 23px;
+  padding: 0.6em 0.6em 0.3em 0.6em;
+  color: #eaeaea;
+  background-color: #081d30;
+  border: 2px solid #eaeaea;
+  cursor: pointer;
+  transition: 0.6s ease;
+  margin-bottom: 5%;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #eaeaea;
+  color: #081d30;
+  border: 2px solid #081d30;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+}
+
+#contact {
+  width: 100%;
+  text-align: center;
+  background-color: #eaeaea;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+}
+
+#contact > h1 {
+  padding-top: 2em;
+  font-size: 60px;
+  color: #081d30;
+}
+
+#contact > .p1 {
+  width: 70%;
+  margin: 3% auto;
+  font-size: 23px;
+  color: #081d30;
+}
+
+#contact > .p2 {
+  width: 70%;
+  margin: 3% auto;
+  font-size: 23px;
+  color: #081d30;
+  padding-top: 2em;
+}
+
+.btn2 {
+  font-family: "Tajawal", sans-serif;
+  font-size: 23px;
+  padding: 0.6em 0.6em 0.3em 0.6em;
+  color: #081d30;
+  background-color: #a0c3af;
+  border: 2px solid #081d30;
+  cursor: pointer;
+  transition: 0.6s ease;
+  font-weight: bold;
+}
+
+.btn2:hover {
+  background-color: #eaeaea;
+  color: #081d30;
+  border: 2px solid #081d30;
+}
+
+.media-logo {
+  width: 125px;
+  padding: 0.8em;
+  transition: 0.7s ease;
+}
+
+.media-logo:hover {
+  opacity: 0.4;
+}
+
+.media-flex {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
