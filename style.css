@@ -123,7 +123,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   text-align: center;
   background-color: #eaeaea;
   background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
@@ -131,13 +130,14 @@ body {
 
 #about > h1 {
   padding-top: 2em;
+  padding-bottom: 0.3em;
   font-size: 60px;
   color: #081d30;
 }
 
 #logo-about {
-  width: 400px;
-  padding: 0.7em;
+  width: 250px;
+  padding-bottom: 2em;
 }
 
 #about > p {
@@ -241,7 +241,8 @@ body {
 #projects {
   width: 100%;
   text-align: center;
-  background-color: #a0c3af;
+  background-color: #eaeaea;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
 }
 
 #projects > h1 {
@@ -258,7 +259,7 @@ body {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   grid-gap: 50px;
   margin: 0 3%;
   padding-bottom: 10em;
@@ -266,9 +267,9 @@ body {
   justify-content: center;
 }
 
-@media (max-width: 410px) {
+@media (max-width: 600px) {
   .project-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
@@ -279,7 +280,8 @@ body {
 }
 
 .project-tile {
-  background-color: #4d7a60;
+  width: 100%;
+  background-color: #081d30;
   font-weight: none;
   border-radius: 5px;
   transition: 1s ease;
@@ -296,8 +298,7 @@ body {
   color: #eaeaea;
   font-size: 35px;
   font-weight: normal;
-  padding-top: 0.7em;
-  padding-bottom: 0.4em;
+  padding: 0.7em 0.2em 0.4em 0.2em;
 }
 
 .project-tile p {
@@ -312,7 +313,7 @@ body {
   font-size: 23px;
   padding: 0.6em 0.6em 0.3em 0.6em;
   color: #eaeaea;
-  background-color: #081d30;
+  background-color: #4d7a60;
   border: 2px solid #eaeaea;
   cursor: pointer;
   transition: 0.6s ease;
@@ -338,38 +339,37 @@ body {
 #contact {
   width: 100%;
   text-align: center;
-  background-color: #eaeaea;
-  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  background-color: #081d30;
 }
 
 #contact > h1 {
   padding-top: 2em;
   font-size: 60px;
-  color: #081d30;
+  color: #eaeaea;
 }
 
 #contact > .p1 {
-  width: 70%;
+  width: 80%;
   margin: 3% auto;
   font-size: 23px;
-  color: #081d30;
+  color: #eaeaea;
 }
 
 #contact > .p2 {
-  width: 70%;
+  width: 80%;
   margin: 3% auto;
   font-size: 23px;
-  color: #081d30;
-  padding-top: 2em;
+  color: #eaeaea;
+  padding-top: 0.6em;
 }
 
 .btn2 {
   font-family: "Tajawal", sans-serif;
-  font-size: 23px;
+  font-size: 25px;
   padding: 0.6em 0.6em 0.3em 0.6em;
-  color: #081d30;
-  background-color: #a0c3af;
-  border: 2px solid #081d30;
+  color: #eaeaea;
+  background-color: #4d7a60;
+  border: 2px solid #eaeaea;
   cursor: pointer;
   transition: 0.6s ease;
   font-weight: bold;
@@ -391,10 +391,21 @@ body {
   opacity: 0.4;
 }
 
+.media-logo-mail {
+  width: 125px;
+  transition: 0.7s ease;
+  padding-top: 1em;
+}
+
+.media-logo-mail:hover {
+  opacity: 0.4;
+}
+
 .media-flex {
   display: flex;
   justify-content: space-around;
   width: 50%;
   margin: 0 auto;
   flex-wrap: wrap;
+  padding-bottom: 8em;
 }
