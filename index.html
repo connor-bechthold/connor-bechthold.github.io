@@ -6,6 +6,9 @@
     <title>Connor Bechthold Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="https://i.ibb.co/G9bt1qp/favicon-32x32.png">
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
 </head>
 <body onload="document.body.style.opacity='1'">
   <nav id='navbar'>
@@ -120,4 +123,7 @@
       <a id='profile-link'href='https://codepen.io/connor-bechthold' target='_blank'><img class='media-logo' src='https://cdn.freebiesupply.com/logos/large/2x/codepen-icon-logo-svg-vector.svg'></a>
   </section>
   </body>  
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
 </html>
