@@ -9,8 +9,8 @@
 
 html {
 	box-sizing: border-box;
-	scroll-behavior: smooth;
 }
+
 body {
 	font-family: "Tajawal", sans-serif;
 	opacity: 0;
