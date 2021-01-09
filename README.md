@@ -1,3 +1,3 @@
 Personal portfolio showcasing projects and info about myself.
 
-Live Demo - https://connor-bechthold.github.io/Personal-portfolio/
+Live Demo - https://connor-bechthold.github.io/
